@@ -275,3 +275,20 @@
             transform: scale(1.2);
             accent-color: var(--primary);
         }
+
+        /* Date Select */
+        #date-select {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        #date-select option {
+            color: var(--secondary);
+            background: white;
+        }

@@ -1,6 +1,7 @@
     // --- Configuration ---
     let phoneNumber = ""; 
     let menuDate = "";
+    let allMenus = [];
     
     // Flattened list for logic
     let menuItems = [];
@@ -11,6 +12,7 @@
     // Initialize
     async function init() {
         const menuContainer = document.getElementById('menu-list');
+        const dateBadge = document.querySelector('.date-badge');
         
         try {
             const response = await fetch('./assets/data/menu.json');
@@ -18,44 +20,85 @@
             const data = await response.json();
 
             phoneNumber = data.phoneNumber;
-            menuDate = data.date;
-            document.querySelector('.date-badge').innerText = `🗓️ Menu for: ${menuDate}`;
-            menuContainer.innerHTML = ''; // Clear loading
-            
-            data.categories.forEach(category => {
-                // Render Category Header
-                const catHeader = document.createElement('div');
-                catHeader.className = 'category-header';
-                catHeader.innerText = category.title;
-                menuContainer.appendChild(catHeader);
+            allMenus = data.menus;
 
-                category.items.forEach(item => {
-                    menuItems.push(item); // Add to flat list
-                    cart[item.id] = 0;
-                    
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'menu-item';
-                    itemDiv.innerHTML = `
-                        <div class="item-header">
-                            <div>
-                                <div class="item-name">${item.name}</div>
-                                <div class="item-desc">${item.desc}</div>
-                            </div>
-                            <div class="item-price">₹${item.price}</div>
-                        </div>
-                        <div class="qty-control">
-                            <button class="qty-btn" onclick="updateQty(${item.id}, -1)">-</button>
-                            <span class="qty-display" id="qty-${item.id}">0</span>
-                            <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
-                        </div>
-                    `;
-                    menuContainer.appendChild(itemDiv);
-                });
+            // Setup Date Dropdown
+            dateBadge.innerHTML = '<span>🗓️ Menu for: </span>';
+            const dateSelect = document.createElement('select');
+            dateSelect.id = 'date-select';
+            
+            // Logic to auto-select today's date
+            let initialIndex = 0;
+            const today = new Date();
+            const todayStr = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
+
+            allMenus.forEach((menu, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.innerText = menu.date;
+                dateSelect.appendChild(option);
+
+                if (menu.date.startsWith(todayStr)) {
+                    initialIndex = index;
+                }
             });
+            
+            dateSelect.value = initialIndex;
+            dateSelect.addEventListener('change', (e) => renderMenu(e.target.value));
+            dateBadge.appendChild(dateSelect);
+
+            // Render first menu
+            renderMenu(initialIndex);
+            
         } catch (e) {
             console.error(e);
             menuContainer.innerHTML = '<div style="text-align:center; color:red;">Failed to load menu.</div>';
         }
+    }
+
+    function renderMenu(index) {
+        const menuContainer = document.getElementById('menu-list');
+        const menu = allMenus[index];
+        menuDate = menu.date;
+        
+        // Reset State
+        menuContainer.innerHTML = '';
+        menuItems = [];
+        cart = {};
+        document.getElementById('grand-total').innerText = '0';
+        const waBtn = document.getElementById('wa-button');
+        if(waBtn) waBtn.disabled = true;
+
+        menu.categories.forEach(category => {
+            // Render Category Header
+            const catHeader = document.createElement('div');
+            catHeader.className = 'category-header';
+            catHeader.innerText = category.title;
+            menuContainer.appendChild(catHeader);
+
+            category.items.forEach(item => {
+                menuItems.push(item); // Add to flat list
+                cart[item.id] = 0;
+                
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'menu-item';
+                itemDiv.innerHTML = `
+                    <div class="item-header">
+                        <div>
+                            <div class="item-name">${item.name}</div>
+                            <div class="item-desc">${item.desc}</div>
+                        </div>
+                        <div class="item-price">₹${item.price}</div>
+                    </div>
+                    <div class="qty-control">
+                        <button class="qty-btn" onclick="updateQty(${item.id}, -1)">-</button>
+                        <span class="qty-display" id="qty-${item.id}">0</span>
+                        <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
+                    </div>
+                `;
+                menuContainer.appendChild(itemDiv);
+            });
+        });
     }
 
     // Update Quantity Logic
@@ -93,7 +136,7 @@
         const modal = document.getElementById('order-modal');
         const summaryDiv = document.getElementById('order-summary');
         
-        let html = '';
+        let html = `<div style="text-align:center; font-weight:bold; margin-bottom:15px; color:var(--primary);">📅 Menu Date: ${menuDate}</div>`;
         let total = 0;
 
         menuItems.forEach(item => {
