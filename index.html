@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri HOMELY FOODS | Order Online</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍴 Sri HOMELY FOODS</h1>
+    <div class="tagline">Fresh, Tasty & Homestyle Meals!</div>
+    <div class="date-badge">Loading menu...</div>
+</header>
+
+<div class="container">
+    
+    <div class="layout-grid">
+        <!-- Right Column: Menu -->
+        <main class="menu-section">
+            <div id="menu-list">
+                <div style="text-align:center; padding: 20px;">Loading delicious items...</div>
+            </div>
+        </main>
+
+        <!-- Left Column: Sidebar -->
+        <aside class="sidebar">
+            <!-- About Section -->
+            <div class="about-box">
+                <h3>👩‍🍳 About Us</h3>
+                <p>
+                    We are a small family-run kitchen bringing you the taste of home. 
+                    Our meals are prepared with fresh ingredients, zero preservatives, and lots of love. 
+                    Experience the authentic flavor of homemade goodness!<br><br>
+                    <strong>Location:</strong><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0515272424345!2d80.1587947103137!3d12.90440828735225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f539a85a3eb%3A0x34c9391ce6840259!2sSri%20homely%20foods!5e0!3m2!1sen!2sin!4v1771142924415!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-box">
+                <h3>📍 Important Info</h3>
+                <ul>
+                    <li><strong>Order Deadline:</strong> 3:00 PM Today</li>
+                    <li><strong>Pickup:</strong> Please bring your own carry bag.</li>
+                    <li><strong>Delivery:</strong> Available within 2km (₹30 extra).</li>
+                    <li><strong>Availability:</strong> From 6:30 PM onwards.</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="info-box">
+                <h3>📞 Contact Us</h3>
+                <p>
+                    For orders and inquiries, please call or WhatsApp us at:<br>
+                    <strong>📞 +91 82815 75389</strong><br>
+                    <em>Or send a WhatsApp message with your order details!</em>
+                </p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<!-- Sticky Footer -->
+<div class="sticky-footer">
+    <div class="total-price">Total: ₹<span id="grand-total">0</span></div>
+    <button id="wa-button" class="whatsapp-btn" onclick="openModal()" disabled>
+        Review Order
+    </button>
+</div>
+
+<!-- Order Confirmation Modal -->
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+        <h2>📝 Confirm Order</h2>
+        <div id="order-summary"></div>
+        <div class="modal-actions">
+            <button class="qty-btn" style="width:auto; border-radius: 20px; background:#f1f1f1;" onclick="closeModal()">Cancel</button>
+            <button class="whatsapp-btn" style="justify-content:center;" onclick="confirmOrder()">Confirm & Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/scripts/scripts.js"></script>
+
+</body>
+</html>
