@@ -33,10 +33,15 @@
           ]
         },
         {
-          "id": 102,
-          "name": "Sambar",
-          "desc": "servers (2nos)",
-          "price": 60
+          "title": "Extras",
+          "items": [
+            {
+              "id": 102,
+              "name": "Sambar",
+              "desc": "servers (2nos)",
+              "price": 60
+            }
+          ]
         }
       ]
     },
