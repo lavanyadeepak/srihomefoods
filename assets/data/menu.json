@@ -11,6 +11,12 @@
           "desc": "Rice, Sambar, Rasam, Poriyal, Curd",
           "price": 120
         }
+        {
+          "id": 102,
+          "name": "Sambar",
+          "desc": "servers (2nos)",
+          "price": 60
+        }
       ]
     },
     {
