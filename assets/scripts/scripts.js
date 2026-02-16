@@ -15,7 +15,7 @@
         const dateBadge = document.querySelector('.date-badge');
         
         try {
-            const response = await fetch('./assets/data/menu.json');
+            const response = await fetch(`./assets/data/menu.json?cb=${Math.random()}`);
             if (!response.ok) throw new Error("Failed to load menu");
             const data = await response.json();
 
