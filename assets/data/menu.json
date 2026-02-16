@@ -2,94 +2,21 @@
   "phoneNumber": "918281575389",
   "menus": [
     {
-      "date": "15-02-2026 (Sunday)",
-      "categories": [
-        {
-          "title": "Lunch (Pre-order only)",
-          "items": [
-            {
-              "id": 101,
-              "name": "Full Meals",
-              "desc": "Rice, Sambar, Rasam, Poriyal, Curd",
-              "price": 120
-            }
-          ]
-        },
-        {
-          "title": "Dinner (Available from 6:30 PM)",
-          "items": [
-            {
-              "id": 1,
-              "name": "Veg Oothappam (2nos)",
-              "desc": "Served with Tomato Chutney & Sambar",
-              "price": 60
-            },
-            {
-              "id": 2,
-              "name": "Podi Oothappam (2nos)",
-              "desc": "Served with Tomato Chutney & Sambar",
-              "price": 60
-            }
-          ]
-        },
-        {
-          "title": "Extras",
-          "items": [
-            {
-              "id": 102,
-              "name": "Sambar",
-              "desc": "servers (2nos)",
-              "price": 60
-            }
-          ]
-        }
-      ]
-    },
-    {
       "date": "16-02-2026 (Monday)",
       "categories": [
         {
-          "title": "Breakfast (Available from 7:00 AM)",
+          "title": "Dinner (Available from 06:30 PM)",
           "items": [
             {
               "id": 201,
-              "name": "Idly (4 nos)",
+              "name": "Arasi Upma",
               "desc": "With Chutney & Sambar",
               "price": 60
             },
             {
               "id": 202,
-              "name": "Rava Khichadi",
+              "name": "Idly (4nos) with Chutney & Sambar",
               "desc": "With Chutney & Sambar",
-              "price": 60
-            }
-          ]
-        },
-        {
-          "title": "Lunch",
-          "items": [
-            {
-              "id": 203,
-              "name": "Avarakkai Poricha Kuzhambu",
-              "desc": "Serves 2",
-              "price": 60
-            },
-            {
-              "id": 204,
-              "name": "Tomato Rasam",
-              "desc": "Serves 2",
-              "price": 60
-            },
-            {
-              "id": 205,
-              "name": "Chow chow Kootu",
-              "desc": "Serves 2",
-              "price": 60
-            },
-            {
-              "id": 206,
-              "name": "Beetroot Poriyal",
-              "desc": "Serves 2",
               "price": 60
             }
           ]
