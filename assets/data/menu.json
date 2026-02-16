@@ -22,6 +22,57 @@
           ]
         }
       ]
+    },
+    {
+      "date": "17-02-2026 (Tuesday)",
+      "categories": [
+        {
+          "title": "Breakfast (Available from 07:00 AM)",
+          "items": [
+            {
+              "id": 301,
+              "name": "Idly (4 nos)",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            },
+            {
+              "id": 302,
+              "name": "Godumai Rava Upma",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            }
+          ]
+        },
+        {
+          "title": "Lunch",
+          "items": [
+            {
+              "id": 303,
+              "name": "Pavakkai Pitla",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 304,
+              "name": "Tomato Rasam",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 305,
+              "name": "Vellarikka Kootu",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 306,
+              "name": "Vazhakkai Poriyal",
+              "desc": "(serves 2)",
+              "price": 60
+            }
+          ]
+        }
+      ]
     }
   ]
 }
