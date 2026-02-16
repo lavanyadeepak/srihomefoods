@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: lavanyadeepak/srihomefoods  # Your repo
+  branch: master  # Or main if you switch
+
+media_folder: "assets/images"  # Where menu pics go
+public_folder: "/assets/images"
+
+collections:
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "menu"
+        label: "Menu Configuration"
+        file: "assets/data/menu.json"
+        fields:
+          - {label: "WhatsApp Phone Number", name: "phoneNumber", widget: "string"}
+          - label: "Daily Menus"
+            name: "menus"
+            widget: "list"
+            fields:
+              - {label: "Date", name: "date", widget: "datetime", format: "DD-MM-YYYY", date_format: "DD-MM-YYYY", time_format: false}
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                fields:
+                  - {label: "Category Title", name: "title", widget: "string"}
+                  - label: "Food Items"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - {label: "Unique ID", name: "id", widget: "number", value_type: "int", hint: "Must be unique for cart logic"}
+                      - {label: "Item Name", name: "name", widget: "string"}
+                      - {label: "Description", name: "desc", widget: "text", required: false}
+                      - {label: "Price (₹)", name: "price", widget: "number", value_type: "int"}
