@@ -15,13 +15,30 @@
             padding-bottom: 80px; /* Space for fixed footer */
         }
 
-        /* Header */
         header {
             background-color: var(--primary);
             color: white;
-            text-align: center;
-            padding: 20px 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align to left for a modern app feel */
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 1.4rem; /* Reduced size so it fits on one line with the logo */
+            line-height: 1.2;
+        }
+
+        .logo {
+            width: 65px; /* Slightly larger for visibility */
+            height: 65px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            object-fit: contain; /* Changed from cover to prevent cropping the 'Sri' text */
+            background-color: #fffde7; /* Matches the logo's internal yellow for a seamless look */
+            flex-shrink: 0; /* Prevents the logo from squishing on small screens */
         }
 
         h1 { margin: 0; font-size: 1.8rem; }

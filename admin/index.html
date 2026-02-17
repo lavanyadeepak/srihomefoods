@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   <link href="./../config.yml" type="text/yaml" rel="cms-config-url" />
+  <link rel="icon" type="image/jpg" href="../assets/images/logo.jpg" />
+<style>
+    /* This targets the specific container Decap uses for the logo */
+    .nc-app-brand-logo {
+      width: 40px !important;  /* CMS bars are usually thinner */
+      height: 40px !important;
+      border-radius: 50% !important;
+      object-fit: contain !important;
+      background-color: #fffde7 !important; /* Keep the yellow background look */
+      border: 1px solid #eee !important;
+      margin: 5px !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Include the script that builds the page and powers Decap CMS -->
