@@ -2,42 +2,14 @@
   "phoneNumber": "918281575389",
   "menus": [
     {
-      "date": "16-02-2026 (Monday)",
+      "date": "17-02-2026 (Tuesday)",
       "categories": [
         {
           "title": "Dinner (Available from 06:30 PM)",
           "items": [
             {
-              "id": 201,
-              "name": "Arasi Upma",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            },
-            {
-              "id": 202,
-              "name": "Idly (4nos) with Chutney & Sambar",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "17-02-2026 (Tuesday)",
-      "categories": [
-        {
-          "title": "Breakfast (Available from 07:00 AM)",
-          "items": [
-            {
               "id": 301,
-              "name": "Idly (4 nos)",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            },
-            {
-              "id": 302,
-              "name": "Godumai Rava Upma",
+              "name": "Set Dosa",
               "desc": "With Chutney & Sambar",
               "price": 60
             }
