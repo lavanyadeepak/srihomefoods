@@ -2,21 +2,56 @@
   "phoneNumber": "918281575389",
   "menus": [
     {
-      "date": "19-02-2026 (Thursday)",
+      "date": "20-02-2026 (Friday)",
       "categories": [
         {
-          "title": "Dinner (Available from 06:30 PM)",
+          "title": "Breakfast (Available from 07:00 AM)",
           "items": [
             {
-              "id": 501,
-              "name": "Upma Kozhukattai (3nos)",
+              "id": 601,
+              "name": "Idly (4 nos)",
               "desc": "With Chutney & Sambar",
               "price": 60
             },
             {
-              "id": 502,
-              "name": "Idly (4nos)",
+              "id": 602,
+              "name": "Pongal",
               "desc": "With Chutney & Sambar",
+              "price": 60
+            },
+            {
+              "id": 603,
+              "name": "Poori (3nos)",
+              "desc": "With masala",
+              "price": 60
+            }
+          ]
+        },
+        {
+          "title": "Lunch",
+          "items": [
+            {
+              "id": 604,
+              "name": "Kadamba Sambar",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 605,
+              "name": "Tomato Rasam",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 606,
+              "name": "Poosanikai Poricha Kootu",
+              "desc": "(serves 2)",
+              "price": 60
+            },
+            {
+              "id": 607,
+              "name": "Cabbage carrots beans Poriyal",
+              "desc": "(serves 2)",
               "price": 60
             }
           ]
