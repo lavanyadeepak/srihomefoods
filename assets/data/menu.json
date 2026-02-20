@@ -2,28 +2,6 @@
   "phoneNumber": "918281575389",
   "menus": [
     {
-      "date": "19-02-2026 (Thursday)",
-      "categories": [
-        {
-          "title": "Dinner (Available from 06:30 PM)",
-          "items": [
-            {
-              "id": 501,
-              "name": "Upma Kozhukattai (3nos)",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            },
-            {
-              "id": 502,
-              "name": "Idly (4nos)",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            }
-          ]
-        }
-      ]
-    },
-    {
       "date": "20-02-2026 (Friday)",
       "categories": [
         {
