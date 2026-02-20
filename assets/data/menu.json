@@ -77,6 +77,29 @@
               "price": 60
             }
           ]
+        },
+        {
+          "title": "Dinner (Available from 06:30 PM)",
+          "items": [
+            {
+              "id": 608,
+              "name": "Thalicha Sevai",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            },
+            {
+              "id": 609,
+              "name": "Chapathi (2nos)",
+              "desc": "With Veg Kurma",
+              "price": 60
+            },
+            {
+              "id": 610,
+              "name": "Veg Oothappam (2nos)",
+              "desc": "With chutney & Sambar",
+              "price": 60
+            }
+          ]
         }
       ]
     }
