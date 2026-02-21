@@ -2,27 +2,50 @@
   "phoneNumber": "918281575389",
   "menus": [
     {
-      "date": "21-02-2026 (Saturday)",
+      "date": "22-02-2026 (Sunday)",
       "categories": [
         {
-          "title": "Dinner (Available from 06:30 PM)",
+          "title": "Breakfast (Available from 7:00 AM)",
           "items": [
             {
-              "id": 701,
-              "name": "Lemon Sevai",
+              "id": 801,
+              "name": "Idly (4 nos)",
               "desc": "With Chutney & Sambar",
               "price": 60
             },
             {
-              "id": 702,
-              "name": "Chapathi (2nos)",
-              "desc": "With Tomato Fry",
-              "price": 70
+              "id": 802,
+              "name": "Pongal",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            }
+          ]
+        },
+        {
+          "title": "Lunch",
+          "items": [
+            {
+              "id": 803,
+              "name": "Vendikkai Sambar",
+              "desc": "Serves 2",
+              "price": 60
             },
             {
-              "id": 703,
-              "name": "Podi Oothappam (2nos)",
-              "desc": "With chutney & Sambar",
+              "id": 804,
+              "name": "Tomato Rasam",
+              "desc": "Serves 2",
+              "price": 60
+            },
+            {
+              "id": 805,
+              "name": "Aviyal",
+              "desc": "Serves 2",
+              "price": 60
+            },
+            {
+              "id": 806,
+              "name": "Beans Parupu Usili",
+              "desc": "Serves 2",
               "price": 60
             }
           ]
