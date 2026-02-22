@@ -59,6 +59,26 @@
             padding: 20px;
         }
 
+        /* Announcement Bar */
+        .announcement-bar {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 1.5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            animation: fadeIn 0.5s ease-out;
+        }
+        .announcement-bar strong { display: block; color: #d35400; font-size: 1.1rem; margin-bottom: 5px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         /* Menu Cards */
         .menu-item {
             background: var(--card-bg);

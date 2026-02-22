@@ -22,6 +22,16 @@
             phoneNumber = data.phoneNumber;
             allMenus = data.menus;
 
+            // Render Announcement if exists
+            if (data.announcement) {
+                const container = document.querySelector('.container');
+                const grid = document.querySelector('.layout-grid');
+                const notice = document.createElement('div');
+                notice.className = 'announcement-bar';
+                notice.innerHTML = `<strong>📢 IMPORTANT UPDATE</strong>${data.announcement.replace(/\n/g, '<br>')}`;
+                container.insertBefore(notice, grid);
+            }
+
             // Setup Date Dropdown
             dateBadge.innerHTML = '<span>🗓️ Menu for: </span>';
             const dateSelect = document.createElement('select');
