@@ -52,6 +52,63 @@
           ]
         }
       ]
+    },
+    {
+      "date": "23-02-2026 (Monday)",
+      "categories": [
+        {
+          "title": "Breakfast (Available from 7:00 AM)",
+          "items": [
+            {
+              "id": 807,
+              "name": "Idly (4 nos)",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            },
+            {
+              "id": 808,
+              "name": "Rava Khichadi",
+              "desc": "With Chutney & Sambar",
+              "price": 60
+            },
+            {
+              "id": 809,
+              "name": "Poori (2nos)",
+              "desc": "With Masala",
+              "price": 60
+            }
+          ]
+        },
+        {
+          "title": "Lunch",
+          "items": [
+            {
+              "id": 810,
+              "name": "Avarakkai Poricha Kuzhambu",
+              "desc": "Serves 2",
+              "price": 60
+            },
+            {
+              "id": 811,
+              "name": "Tomato Rasam",
+              "desc": "Serves 2",
+              "price": 60
+            },
+            {
+              "id": 812,
+              "name": "Chow chow Kootu",
+              "desc": "Serves 2",
+              "price": 60
+            },
+            {
+              "id": 813,
+              "name": "Beetroot Poriyal",
+              "desc": "Serves 2",
+              "price": 60
+            }
+          ]
+        }
+      ]
     }
   ]
 }
