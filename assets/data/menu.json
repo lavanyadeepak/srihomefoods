@@ -3,22 +3,16 @@
   "announcement": "",
   "menus": [
     {
-      "date": "24-02-2026 (Tuesday)",
+      "date": "01-03-2026 (Sunday)",
       "categories": [
         {
           "title": "Dinner (Available from 6:30 PM)",
           "items": [
             {
-              "id": 901,
-              "name": "Upma Kozhukattai (3nos)",
-              "desc": "With Chutney & Sambar",
-              "price": 60
-            },
-            {
-              "id": 902,
-              "name": "Idly (4nos)",
-              "desc": "With Chutney & Sambar",
-              "price": 60
+              "id": 1001,
+              "name": "Chapathi (2nos)",
+              "desc": "With Channa masala",
+              "price": 70
             }
           ]
         }
